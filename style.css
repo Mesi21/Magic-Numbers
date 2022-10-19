@@ -61,7 +61,7 @@ main {
   border: 10px groove rgb(215, 216, 206);;
 }
     
-.display {
+#display {
   margin: 0px;
   width: 100%;
   padding: 20px;

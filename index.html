@@ -18,40 +18,40 @@
     </aside>
     <aside>
       <div class="calculator f-col">
-        <div class="display">0000</div>
+        <div id="display">0</div>
         <div class="btnPanel f-col">
           <div class="rows f-row">
-            <button value="AC">C</button>
-            <button value="+/-">AC</button>
-            <button value="%">%</button>
-            <button class="blueBck" value="÷">÷</button>
+            <button data-clear value="C">C</button>
+            <button data-del value="AC">AC</button>
+            <button data-perc value="%">%</button>
+            <button data-ops class="blueBck" value="÷">÷</button>
           </div>
     
           <div class="rows f-row"></button>
-            <button value="7">7</button>
-            <button value="8">8</button>
-            <button value="9">9</button>
-            <button class="blueBck" value="X">X</button>
+            <button data-number value="7">7</button>
+            <button data-number value="8">8</button>
+            <button data-number value="9">9</button>
+            <button data-ops class="blueBck" value="X">X</button>
           </div>
     
           <div class="rows f-row">
-            <button value="4">4</button>
-            <button value="5">5</button>
-            <button value="6">6</button>
-            <button class="blueBck" value="-">-</button>
+            <button data-number value="4">4</button>
+            <button data-number value="5">5</button>
+            <button data-number value="6">6</button>
+            <button data-ops class="blueBck" value="-">-</button>
           </div>
     
           <div class="rows f-row">
-            <button value="1">1</button>
-            <button value="2">2</button>
-            <button value="3">3</button>
-            <button class="blueBck" value="+">+</button>
+            <button data-number value="1">1</button>
+            <button data-number value="2">2</button>
+            <button data-number value="3">3</button>
+            <button data-ops class="blueBck" value="+">+</button>
           </div>
     
           <div class="rows f-row">
-            <button class="wide" value="0">0</button>
-            <button value=".">.</button>
-            <button class="blueBck" value="=">=</button>
+            <button data-number class="wide" value="0">0</button>
+            <button data-float value=".">.</button>
+            <button data-eql class="blueBck" value="=">=</button>
           </div>
         </div>
       </div>
