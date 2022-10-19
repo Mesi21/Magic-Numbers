@@ -4,53 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
   <title>Magic Numbers</title>
   <script src="./logic.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="f-row">
     <h1>Magic Numbers</h1>
   </header>
-  <main>
+  <main class="f-row">
     <aside>
-      <img src="./Assets/math-quot.png" alt="Mathematics is about understanding">
+      <img src="./Assets/math-quot.png" alt="Mathematics is about understanding" class="quote">
     </aside>
     <aside>
-      <div class="calculator">
-        <div class="display"></div>
-        <div class="btnPanel">
-          <div className="rows">
-            <button value="AC">AC</button>
-            <button value="+/-">+/-</button>
+      <div class="calculator f-col">
+        <div class="display">0000</div>
+        <div class="btnPanel f-col">
+          <div class="rows f-row">
+            <button value="AC">C</button>
+            <button value="+/-">AC</button>
             <button value="%">%</button>
-            <button value="÷">÷</button>
+            <button class="blueBck" value="÷">÷</button>
           </div>
     
-          <div className="rows"></button>
+          <div class="rows f-row"></button>
             <button value="7">7</button>
             <button value="8">8</button>
             <button value="9">9</button>
-            <button value="X">X</button>
+            <button class="blueBck" value="X">X</button>
           </div>
     
-          <div className="rows">
+          <div class="rows f-row">
             <button value="4">4</button>
             <button value="5">5</button>
             <button value="6">6</button>
-            <button value="-">-</button>
+            <button class="blueBck" value="-">-</button>
           </div>
     
-          <div className="rows">
+          <div class="rows f-row">
             <button value="1">1</button>
             <button value="2">2</button>
             <button value="3">3</button>
-            <button value="+">+</button>
+            <button class="blueBck" value="+">+</button>
           </div>
     
-          <div className="rows">
-            <button value="0" wide>0</button>
+          <div class="rows f-row">
+            <button class="wide" value="0">0</button>
             <button value=".">.</button>
-            <button value="=">=</button>
+            <button class="blueBck" value="=">=</button>
           </div>
         </div>
       </div>
