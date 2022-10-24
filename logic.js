@@ -30,7 +30,7 @@ function inputDigit(digit) {
 function inputDecimal(decimalPoint) {
   if (startData.isNext === true) {
   	startData.displayValue = '0.'
-    startData.isNext = false;
+    startData.isNext = false
     return
   }
 
@@ -43,7 +43,7 @@ function useOperator(opSign) {
   const { displayValue, firstNum, operator } = startData;
   const inputValue = parseFloat(displayValue);
   if (operator && startData.isNext)  {
-    startData.operator = opSign;
+    startData.operator = opSign
     return;
   }
   if (firstNum === null && !isNaN(inputValue)) {
