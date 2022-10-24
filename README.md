@@ -13,7 +13,7 @@ It can solve basic operations.
 
 ## Live version
 
-For the live version of this project visit the following [link]() 
+For the live version of this project visit the following [link](https://mesi21.github.io/Magic-Numbers/) 
 
 ## Get started
 
