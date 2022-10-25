@@ -1,8 +1,5 @@
 const allNumbers = Array.from(document.querySelectorAll('[data-number]'));
 const allOperationSigns = Array.from(document.querySelectorAll('[data-ops]'));
-console.log(allOperationSigns.forEach(opSign => {
-  console.log(opSign.value)
-}))
 const pointForFloat = document.querySelector('[data-float]');
 const deletePrevious = document.querySelector('[data-del]');
 const clearAllData = document.querySelector('[data-clear]');
@@ -20,7 +17,7 @@ function updateScreen() {
   display.innerHTML = startData.displayValue
 }
 
-function inputDigit(digit) {
+function addDigit(digit) {
   const { displayValue, isNext } = startData
   if(isNext) {
     startData.displayValue = digit
@@ -30,7 +27,7 @@ function inputDigit(digit) {
   }
 }
 
-function inputDecimal(decimalPoint) {
+function addDecimal(decimalPoint) {
   if (startData.isNext === true) {
   	startData.displayValue = '0.'
     startData.isNext = false
@@ -75,9 +72,6 @@ function operate(a,b, op) {
       } else {
         return a / b
       }
-    case '%':
-      a * 0.01
-      console.log(a)
     default:
       b
   }
@@ -101,7 +95,7 @@ function allClear() {
 function btnClick() {
   allNumbers.forEach(num => {
     num.addEventListener('click', () => {
-      inputDigit(num.value)
+      addDigit(num.value)
       updateScreen()
     })
   })
@@ -116,7 +110,7 @@ function btnClick() {
     updateScreen()
   })
   pointForFloat.addEventListener('click', () => {
-    inputDecimal(pointForFloat.value)
+    addDecimal(pointForFloat.value)
     updateScreen()
   })
   deletePrevious.addEventListener('click', () => {
@@ -140,7 +134,7 @@ document.addEventListener('keydown', (ev) => {
     case '7':
     case '8': 
     case '9':
-      inputDigit(ev.key)
+      addDigit(ev.key)
       updateScreen()
       break
     case '+':

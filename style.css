@@ -90,7 +90,12 @@ main {
   font-weight: 700;
 }
 
-.red {
+.del {
   background-color: #386a63;
   color: #fff;
+}
+
+.arrowBck {
+  background-color: #64a169;
+  color:#fff;
 }
