@@ -60,6 +60,7 @@ header a:hover
 {
   color:#3366cc;
   text-decoration:none;
+  cursor: pointer;
 }
 
 .social {

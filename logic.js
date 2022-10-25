@@ -15,6 +15,7 @@ const startData = {
 function updateScreen() {
   display.value = startData.displayValue
   display.innerHTML = startData.displayValue
+  if(startData.isNext && startData.operator !== '=') display.innerHTML = startData.displayValue + ' ' + startData.operator
 }
 
 function addDigit(digit) {
