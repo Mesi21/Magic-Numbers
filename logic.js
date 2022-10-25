@@ -122,7 +122,6 @@ function btnClick() {
 btnClick()
 
 document.addEventListener('keydown', (ev) => {
-  console.log(ev.key)
   switch(ev.key) {
     case '0':
     case '1':
