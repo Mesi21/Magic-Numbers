@@ -74,6 +74,7 @@ main {
   border: 5px solid #386a63;
   border-radius: 10px;
   padding: 10px;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
 }
 
 .calculator {
