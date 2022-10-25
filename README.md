@@ -1,5 +1,3 @@
-# ... Soon to be updated
-
 # Magic-Numbers
 
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -9,7 +7,7 @@ It can solve basic operations.
 
 ---
 
-![]()
+![Calculator](./Assets/screenshot.jpg)
 
 ## Live version
 
@@ -27,7 +25,7 @@ For the live version of this project visit the following [link](https://mesi21.g
 
 ## Technology
 
-- Javascript ES6
+- Javascript
 - HTML && CSS
 
 ## Contributor:
@@ -40,4 +38,4 @@ Perform more advanced calculations.
 
 ## Show your support:
 
-Give a :star: if you liked the app
+Give a :star: if you like the app
