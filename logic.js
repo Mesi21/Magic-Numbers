@@ -22,9 +22,9 @@ function addDigit(digit) {
   if(isNext) {
     startData.displayValue = digit
     startData.isNext = false
-  } else {
-    startData.displayValue = displayValue !== '0' ? displayValue + digit : digit 
+    return
   }
+  startData.displayValue = displayValue !== '0' ? displayValue + digit : digit
 }
 
 function addDecimal(decimalPoint) {
@@ -50,7 +50,7 @@ function useOperator(opSign) {
     startData.firstNum = inputValue;
   } else if (operator) {
     const result = operate(firstNum, inputValue, operator);
-    startData.displayValue = `${parseFloat(result.toFixed(9))}`;
+    startData.displayValue = `${parseFloat(result.toFixed(5))}`;
     startData.firstNum = result;
   }
   startData.isNext = true;

@@ -18,13 +18,18 @@
   gap: 0;
 }
 
-button{
+button {
   width: 100px;
   text-align: center;
   border: 1px solid #A0A0A0;
   font-weight: 500;
   font-size: 1.2rem;
   color: #000;
+}
+
+button:hover {
+  background-color: #515151;
+  color: #fff;
 }
 
 .wide {
