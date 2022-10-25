@@ -2,7 +2,7 @@
 
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-This project is about making a calculator app using Javascript.
+This project is about making a calculator app using Javascript. Operations can be performed from the keyboard.
 It can solve basic operations. 
 
 ---

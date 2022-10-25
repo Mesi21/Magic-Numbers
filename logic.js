@@ -23,7 +23,7 @@ function addDigit(digit) {
     startData.displayValue = digit
     startData.isNext = false
   } else {
-    startData.displayValue = displayValue === '0' ? digit : displayValue + digit
+    startData.displayValue = displayValue !== '0' ? displayValue + digit : digit 
   }
 }
 
