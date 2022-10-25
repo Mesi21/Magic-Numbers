@@ -1,5 +1,8 @@
 const allNumbers = Array.from(document.querySelectorAll('[data-number]'));
 const allOperationSigns = Array.from(document.querySelectorAll('[data-ops]'));
+console.log(allOperationSigns.forEach(opSign => {
+  console.log(opSign.value)
+}))
 const pointForFloat = document.querySelector('[data-float]');
 const deletePrevious = document.querySelector('[data-del]');
 const clearAllData = document.querySelector('[data-clear]');
@@ -74,6 +77,7 @@ function operate(a,b, op) {
       }
     case '%':
       a * 0.01
+      console.log(a)
     default:
       b
   }
